@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заберибисский Павел Валентинович - Галерея</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap&text=АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="about.html">О Павле</a></li>
+                <li><a href="games.html">Игры</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="periphery.html">Периферия</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallery-video">
+            <div class="content">
+                <div class="video-wrapper">
+                    <video src="gallery-video.mp4" controls poster="poster.jpg" style="width:100%;height:auto;" preload="metadata"></video>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="content">
+                <div class="gallery-filters">
+                    <button class="filter-btn" data-filter="cars">Автомобили</button>
+                    <button class="filter-btn" data-filter="games">Игры</button>
+                    <button class="filter-btn" data-filter="life">Повседневная жизнь</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Автомобили -->
+                    <div class="gallery-item" data-category="cars">
+                        <img src="avto1.jpg" alt="Автомобиль 1">
+                        <div class="gallery-item-info">
+                            <h3>Dodge Challenger SRT Hellcat</h3>
+                            <p>🚀 Dodge Challenger SRT Hellcat — 717 диких сил под капотом.
+                                Мускулкар, который не едет — он разрывает асфальт. Только для тех, кто готов держать зверя за поводья.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cars">
+                        <img src="avto2.jpg" alt="Автомобиль 2">
+                        <div class="gallery-item-info">
+                            <h3>Toyota RAV4 ev2</h3>
+                            <p>⚡ Toyota RAV4 EV (2-го поколения) — электрокроссовер с характером.
+                                Тихий снаружи, дерзкий внутри</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cars">
+                        <img src="avto3.jpg" alt="Автомобиль 3">
+                        <div class="gallery-item-info">
+                            <h3>Nissan Skyline GT-R R34</h3>
+                            <p>🔥 Nissan Skyline GT-R R34 — легенда, рожденная для асфальта.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cars">
+                        <img src="avto4.jpg" alt="Автомобиль 4">
+                        <div class="gallery-item-info">
+                            <h3>Lamborghini Murcielago 2003 </h3>
+                            <p>🦂 Lamborghini Murciélago 2003 — чистокровный бык с душой V12.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cars">
+                        <img src="avto5.jpg" alt="Автомобиль 5">
+                        <div class="gallery-item-info">
+                            <h3>Lexus LFA</h3>
+                            <p>🎵 Lexus LFA — симфония V10 на 9 000 об/мин.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cars">
+                        <img src="avto6.jpg" alt="Автомобиль 6">
+                        <div class="gallery-item-info">
+                            <h3>Audi RS6 Avant</h3>
+                            <p>🚀 Audi RS6 Avant — семейный универсал с душой спорткара.</p>
+                        </div>
+                    </div>
+                    <!-- Игры -->
+                    <div class="gallery-item" data-category="games">
+                        <img src="igra1.jpg" alt="Игра 1">
+                        <div class="gallery-item-info">
+                            <h3>The Witcher 3</h3>
+                            <p>Ламберт,Ламберт</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="games">
+                        <img src="igra2.jpg" alt="Игра 2">
+                        <div class="gallery-item-info">
+                            <h3>Counter-Strike 2</h3>
+                            <p>ДА НЕ РЕГАЕТ БЛЯТЬ</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="games">
+                        <img src="igra3.jpg" alt="Игра 3">
+                        <div class="gallery-item-info">
+                            <h3>Fortnite</h3>
+                            <p>Белый,белый,белый</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="games">
+                        <img src="igra4.jpg" alt="Игра 4">
+                        <div class="gallery-item-info">
+                            <h3>Rocket League</h3>
+                            <p>Блять не попал</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="games">
+                        <img src="igra5.jpg" alt="Игра 5">
+                        <div class="gallery-item-info">
+                            <h3>Assassin's Creed</h3>
+                            <p>Пройди вторую часть</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="games">
+                        <img src="igra6.jpg" alt="Игра 6">
+                        <div class="gallery-item-info">
+                            <h3>Brawl Stars</h3>
+                            <p>хз</p>
+                        </div>
+                    </div>
+                    <!-- Повседневная жизнь -->
+                    <div class="gallery-item" data-category="life">
+                        <img src="life1.jpg" alt="Жизнь 1">
+                        <div class="gallery-item-info">
+                            <h3>Встреча с кумиром всей жизни</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="life">
+                        <img src="life2.jpg" alt="Жизнь 2">
+                        <div class="gallery-item-info">
+                            <h3>Мужская посиделка</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="life">
+                        <img src="life3.jpg" alt="Жизнь 3">
+                        <div class="gallery-item-info">
+                            <h3>А вот если бы...</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="life">
+                        <img src="life4.jpg" alt="Жизнь 4">
+                        <div class="gallery-item-info">
+                            <h3>Жизнь 4</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="life">
+                        <img src="life5.jpg" alt="Жизнь 5">
+                        <div class="gallery-item-info">
+                            <h3>Жизнь 5</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="life">
+                        <img src="life6.jpg" alt="Жизнь 6">
+                        <div class="gallery-item-info">
+                            <h3>Жизнь 6</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Модальное окно для просмотра фото -->
+        <div id="gallery-modal" class="gallery-modal">
+            <div class="gallery-modal-backdrop"></div>
+            <div class="gallery-modal-content">
+                <img src="" alt="Фото" id="gallery-modal-img">
+                <button class="gallery-modal-close" aria-label="Закрыть">×</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Фан-страница Заберибисского Павла Валентиновича</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

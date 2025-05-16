@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заберибисский Павел Валентинович - Игровая библиотека</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about.html">О Павле</a></li>
+                <li><a href="games.html" class="active">Игры</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="periphery.html">Периферия</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games-hero">
+            <h1>Игровая библиотека</h1>
+            <p class="subtitle">Игры и роли Павла в них</p>
+        </section>
+
+        <section id="games-content">
+            <div class="content">
+                <div class="games-filters">
+                    <button class="filter-btn active" data-filter="all">Все игры</button>
+                    <button class="filter-btn" data-filter="shooter">Шутеры</button>
+                    <button class="filter-btn" data-filter="battle-royale">Battle Royale</button>
+                    <button class="filter-btn" data-filter="sports">Спортивные</button>
+                    <button class="filter-btn" data-filter="rpg">RPG</button>
+                    <button class="filter-btn" data-filter="mobile">Мобильные</button>
+                    <button class="filter-btn" data-filter="other">Другие игры</button>
+                </div>
+
+                <div class="games-grid">
+                    <!-- CS2 -->
+                    <div class="game-card" data-category="shooter">
+                        <div class="game-header">
+                            <img src="game1.jpg" alt="CS2">
+                            <h2>Counter-Strike 2</h2>
+                        </div>
+                    </div>
+
+                    <!-- Fortnite -->
+                    <div class="game-card" data-category="battle-royale">
+                        <div class="game-header">
+                            <img src="game2.jpg" alt="Fortnite">
+                            <h2>Fortnite</h2>
+                        </div>
+                    </div>
+
+                    <!-- Rocket League -->
+                    <div class="game-card" data-category="sports">
+                        <div class="game-header">
+                            <img src="game3.jpg" alt="Rocket League">
+                            <h2>Rocket League</h2>
+                        </div>
+                    </div>
+
+                    <!-- The Witcher 3 -->
+                    <div class="game-card" data-category="rpg">
+                        <div class="game-header">
+                            <img src="game4.jpg" alt="The Witcher 3">
+                            <h2>The Witcher 3: Wild Hunt</h2>
+                        </div>
+                    </div>
+
+                    <!-- Battlefield -->
+                    <div class="game-card" data-category="shooter">
+                        <div class="game-header">
+                            <img src="game5.jpg" alt="Battlefield">
+                            <h2>Battlefield</h2>
+                        </div>
+                    </div>
+
+                    <!-- Brawl Stars -->
+                    <div class="game-card" data-category="mobile">
+                        <div class="game-header">
+                            <img src="game6.jpg" alt="Brawl Stars">
+                            <h2>Brawl Stars</h2>
+                        </div>
+                    </div>
+
+                    <!-- Другие игры -->
+                    <div class="game-card" data-category="other">
+                        <div class="game-header">
+                            <img src="game7.jpg" alt="Cyberpunk 2077">
+                            <h2>Cyberpunk 2077</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно для подробной информации об игре -->
+    <div id="game-modal" class="game-modal">
+        <div class="game-modal-backdrop"></div>
+        <div class="game-modal-content">
+            <button class="game-modal-close" aria-label="Закрыть">×</button>
+            <div class="game-modal-cover-block">
+                <img src="" alt="Обложка игры" id="game-modal-cover">
+            </div>
+            <div class="game-modal-info">
+                <h2 id="game-modal-title"></h2>
+                <div class="game-modal-section">
+                    <h3>Игровые достижения</h3>
+                    <ul id="game-modal-achievements"></ul>
+                </div>
+                <div class="game-modal-section">
+                    <h3>Заслуги</h3>
+                    <ul id="game-modal-awards"></ul>
+                </div>
+                <div class="game-modal-section">
+                    <h3>Погоняла</h3>
+                    <div id="game-modal-nicknames"></div>
+                </div>
+                <div class="game-modal-section">
+                    <h3>Что движет мной в игре</h3>
+                    <div id="game-modal-skill"></div>
+                </div>
+                <div class="game-modal-section game-modal-plusminus">
+                    <div>
+                        <h4>Плюсы</h4>
+                        <ul id="game-modal-pluses"></ul>
+                    </div>
+                    <div>
+                        <h4>Минусы</h4>
+                        <ul id="game-modal-minuses"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для просмотра фото -->
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="gallery-modal-backdrop"></div>
+        <div class="gallery-modal-content">
+            <img src="" alt="Фото" id="gallery-modal-img">
+            <button class="gallery-modal-close" aria-label="Закрыть">×</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Фан-страница Заберибисского Павла Валентиновича</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

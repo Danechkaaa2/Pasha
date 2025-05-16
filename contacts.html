@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заберибисский Павел Валентинович - Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap&text=АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about.html">О Павле</a></li>
+                <li><a href="games.html">Игры</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+                <li><a href="periphery.html">Периферия</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacts-content">
+            <div class="content">
+                <div class="contacts-grid">
+                    <div class="social-blocks">
+                        <div class="social-block social-steam" data-social="steam">
+                            <span class="social-icon">🎮</span>
+                            <span class="social-title">Steam</span>
+                            <span class="social-username">PashaBiceps</span>
+                        </div>
+                        <div class="social-block social-tg" data-social="tg">
+                            <span class="social-icon">✈️</span>
+                            <span class="social-title">Telegram</span>
+                            <span class="social-username">@zzzzzz0z0z</span>
+                        </div>
+                        <div class="social-block social-instagram" data-social="instagram">
+                            <span class="social-icon">📸</span>
+                            <span class="social-title">Instagram</span>
+                            <span class="social-username">@Pasha__02_</span>
+                        </div>
+                        <div class="social-block social-vk" data-social="vk">
+                            <span class="social-icon">🖤</span>
+                            <span class="social-title">VK</span>
+                            <span class="social-username">покинул</span>
+                        </div>
+                    </div>
+
+                    <!-- Модальные окна для соцсетей -->
+                    <div class="social-modal" id="modal-steam">
+                        <div class="social-modal-backdrop"></div>
+                        <div class="social-modal-content">
+                            <img src="steam.jpg" alt="Steam" class="social-modal-img">
+                            <div class="social-modal-text">
+                                <h2>Steam</h2>
+                                <p>Нихуя ты бодро нажал, пользователь в сети был 90+ дней назад , пиздуй нахуй отсюда</p>
+                            </div>
+                            <button class="social-modal-close" aria-label="Закрыть">×</button>
+                        </div>
+                    </div>
+                    <div class="social-modal" id="modal-tg">
+                        <div class="social-modal-backdrop"></div>
+                        <div class="social-modal-content">
+                            <img src="tg.jpg" alt="Telegram" class="social-modal-img">
+                            <div class="social-modal-text">
+                                <h2>Telegram</h2>
+                                <p>Ты конечно не поверишь, но,был недавно</p>
+                            </div>
+                            <button class="social-modal-close" aria-label="Закрыть">×</button>
+                        </div>
+                    </div>
+                    <div class="social-modal" id="modal-instagram">
+                        <div class="social-modal-backdrop"></div>
+                        <div class="social-modal-content">
+                            <img src="inst.jpg" alt="Instagram" class="social-modal-img">
+                            <div class="social-modal-text">
+                                <h2>Instagram</h2>
+                                <p>ну я думаю тут слова не нужны</p>
+                            </div>
+                            <button class="social-modal-close" aria-label="Закрыть">×</button>
+                        </div>
+                    </div>
+                    <div class="social-modal" id="modal-vk">
+                        <div class="social-modal-backdrop"></div>
+                        <div class="social-modal-content">
+                            <img src="vk.jpg" alt="VK" class="social-modal-img">
+                            <div class="social-modal-text">
+                                <h2>VK</h2>
+                                <p>Здесь мог бы быть ваш VK-профиль или мем!</p>
+                            </div>
+                            <button class="social-modal-close" aria-label="Закрыть">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Модальное окно для увеличения фото соцсетей -->
+        <div id="gallery-modal" class="gallery-modal">
+            <div class="gallery-modal-backdrop"></div>
+            <div class="gallery-modal-content">
+                <img src="" alt="Фото" id="gallery-modal-img">
+                <button class="gallery-modal-close" aria-label="Закрыть">×</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Фан-страница Заберибисского Павла Валентиновича</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

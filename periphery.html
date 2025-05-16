@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Периферия Павла</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap&text=АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about.html">О Павле</a></li>
+                <li><a href="games.html">Игры</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="periphery.html" class="active">Периферия</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;">
+        <section id="periphery-hero">
+            <h1>Периферия</h1>
+            <p class="subtitle">Техника, с которой играется Павел</p>
+        </section>
+        <section id="periphery-content">
+            <div class="periphery-grid">
+                <div class="periphery-card" data-device="mouse">
+                    <img src="mouse.jpg" alt="Мышь" class="periphery-img">
+                    <h2>Мышь</h2>
+                    <p>Bloode V7</p>
+                </div>
+                <div class="periphery-card" data-device="keyboard">
+                    <img src="key.jpg" alt="Клавиатура" class="periphery-img">
+                    <h2>Клавиатура</h2>
+                    <p>Defender Werewolf GK-120DL</p>
+                </div>
+                <div class="periphery-card" data-device="headphones">
+                    <img src="head.jpg" alt="Наушники" class="periphery-img">
+                    <h2>Наушники</h2>
+                    <p>
+                        Bloody G570
+                    </p>
+                </div>
+                <div class="periphery-card" data-device="monitor">
+                    <img src="monitor.jpg" alt="Монитор" class="periphery-img">
+                    <h2>Монитор</h2>
+                    <p>Samasung LS24C310EAIXCI</p>
+                </div>
+                <div class="periphery-card" data-device="pc">
+                    <img src="pc.jpg" alt="Компьютер" class="periphery-img">
+                    <h2>Компьютер</h2>
+                    <p>Intel i5, GTX, 16GB RAM</p>
+                </div>
+            </div>
+        </section>
+        <!-- Модальное окно для подробной информации о девайсе -->
+        <div id="periphery-modal" class="periphery-modal">
+            <div class="periphery-modal-backdrop"></div>
+            <div class="periphery-modal-content">
+                <img src="" alt="Фото устройства" id="periphery-modal-img">
+                <div class="periphery-modal-text">
+                    <h2 id="periphery-modal-title"></h2>
+                    <p id="periphery-modal-desc"></p>
+                    <ul id="periphery-modal-specs"></ul>
+                </div>
+                <button class="periphery-modal-close" aria-label="Закрыть">×</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Фан-страница Заберибисского Павла Валентиновича</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
