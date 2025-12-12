@@ -518,25 +518,25 @@ document.addEventListener('DOMContentLoaded', () => {
         mouse: {
             img: 'mouse.jpg',
             title: 'Мышь',
-            desc: 'Bloodty V7',
+            desc: 'Ajazz 159 apex',
             specs: [
                 'Тип сенсора: оптический',
-                'Вес: 97 кг',
+                'Вес: 56 грамм',
                 'DPI: 100-25600',
-                'Количество кнопок: 8',
+                'Количество кнопок: 5',
                 'Подсветка: Да'
             ]
         },
         keyboard: {
             img: 'key.jpg',
             title: 'Клавиатура',
-            desc: 'Defender Werewolf GK-120DL',
+            desc: 'AULA чето-та',
             specs: [
-                'Тип: Мембранная',
+                'Тип: Свитчики',
                 'Форм-фактор: 100%',
-                'Подключение: проводок',
+                'Подключение: безпроводок',
                 'Подсветка: RGB',
-                'Переключатели: Мембранка епта'
+                'Переключатели: Механист'
             ]
         },
         headphones: {
@@ -565,10 +565,10 @@ document.addEventListener('DOMContentLoaded', () => {
         pc: {
             img: 'pc.jpg',
             title: 'Компьютер',
-            desc: 'Intel i5, GTX, 16GB RAM — мощная сборка для любых задач.',
+            desc: 'Intel i5, RTX, 16GB RAM — мощная сборка для любых задач.',
             specs: [
                 'Процессор: Intel Core i5-10400F',
-                'Видеокарта: NVIDIA GTX 1650 Super',
+                'Видеокарта: NVIDIA RTX 5060TI',
                 'ОЗУ: 16 ГБ',
                 'SSD: 1 ТБ',
                 'ОС: Windows 11'
@@ -617,4 +617,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
 }); 
